@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 85vh;
   flex-direction: column;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -65,6 +65,7 @@ button:hover{
   width: 15rem;
   margin: 0 auto;
 }
+
 #imgs img{
   margin: 0 0.3125rem;
 }
@@ -80,7 +81,7 @@ button:hover{
   margin: 0 auto;
 }
 
-#imgs img:not(#equal, #plus, #win-lost){
+#imgs img:not(#equal, #versus, #win-lost){
   width: 2rem;
 }
 
@@ -88,10 +89,30 @@ button:hover{
   width: 2.3rem;
 }
 
-#imgs img[src="./imgs/equal.png"], [src="./imgs/plus.png"]{
+#imgs img[src="./imgs/equal.png"], [src="./imgs/vs_1.png"]{
   width: 1.8rem;
 }
 
 .nothing {
   display: none;
+}
+
+.green {
+  border: 3px solid rgb(53, 228, 53);
+}
+
+.red {
+  border: 3px solid rgb(224, 18, 18);
+}
+
+.none {
+  border: none;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }

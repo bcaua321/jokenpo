@@ -28,6 +28,7 @@ function captureInput(){
     console.log('Your choice: ' + input);
     winLost(input, computer);
   });
+  
 }
 captureInput();
 
@@ -45,20 +46,21 @@ function winLost(user, comp){
   const winLost = document.getElementById('win-lost'); 
 
   result.classList.remove('nothing');
-  document.getElementById('plus').src = './imgs/plus.png';
+  document.getElementById('versus').src = './imgs/vs_1.png';
   document.getElementById('equal').src = './imgs/equal.png';
 
   if (user === comp) { 
     userInput.src = '';
     compInput.src = '';
-    document.getElementById('plus').src = '';
+
+    document.getElementById('versus').src = '';
     document.getElementById('equal').src = '';
     winLost.src = './imgs/draw.png';
     return;
   } 
   
   if (user === 'stone'){
-    userInput.src = './imgs/stone.png';
+    userInput.src = './imgs/stones_1.png';
     if (comp === 'scissors'){
       compInput.src = './imgs/scissors2.png';
       winLost.src = './imgs/win.png';
@@ -77,7 +79,7 @@ function winLost(user, comp){
       winLost.src = './imgs/game-over_3.png';
       return;
     } else if (comp === 'stone'){
-      compInput.src = './imgs/stone.png';
+      compInput.src = './imgs/stones_1.png';
       winLost.src = './imgs/win.png';
       return;
     }
@@ -90,10 +92,19 @@ function winLost(user, comp){
       winLost.src = './imgs/win.png';
       return;
     } else if (comp === 'stone'){
-      compInput.src = './imgs/stone.png';
+      compInput.src = './imgs/stones_1.png';
       winLost.src = './imgs/game-over_3.png';
       return;
     }
   }
 }
 
+// function colorWin(verify){
+//   const winlost = document.getElementById("result");
+//   if(verify){ 
+//     winlost.classList.add('green');
+//   } 
+//     winlost.classList.add('red');
+  
+//     return;
+// }
