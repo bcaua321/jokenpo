@@ -9,7 +9,7 @@
 
 # Demonstração
 <p align="center">
-<img src="#">
+<img src="https://user-images.githubusercontent.com/67557512/140392057-00359b92-2689-4170-844c-17c0b2473d1e.gif">
 </p>
 
 <p align="center">Você pode testar <a href="https://bcaua321.github.io/jokenpo/" >aqui</a> ;).</p>
