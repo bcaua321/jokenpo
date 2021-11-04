@@ -3,11 +3,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 85vh;
+  width: auto;
   flex-direction: column;
-  overflow-y: hidden;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Style the main container*/
@@ -17,8 +18,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 7vh;
-  width: 40vh;
-  border-radius: 1rem;
+  width: 40vw;
 }
 
 h1 {
@@ -97,20 +97,12 @@ button:hover{
   display: none;
 }
 
-.green {
-  border: 3px solid rgb(53, 228, 53);
-}
-
-.red {
-  border: 3px solid rgb(224, 18, 18);
-}
-
 .none {
   border: none;
 }
 
-
 footer {
+  overflow: hidden;
   position: absolute;
   bottom: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

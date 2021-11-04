@@ -2,12 +2,11 @@ const paper = document.getElementById("input-papel");
 const stone = document.getElementById("input-pedra");
 const scissors = document.getElementById("input-tesoura");
 const result = document.getElementById("imgs");
+let input; 
+let computer;
 
 // Events to capture input 
 function captureInput(){
-  let input; 
-  let computer;
-  
   paper.addEventListener('click', ()=>{
     computer = computerChoice();
     input = paper.value;
